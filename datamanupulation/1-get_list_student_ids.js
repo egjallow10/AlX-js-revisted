@@ -1,7 +1,7 @@
 const getListStudentIds = (listOfArray)=>{
 	if(Array.isArray(listOfArray)) {
 		const returnList = [];
-		for( elements of listOfArray) {
+		for(let elements of listOfArray) {
 			returnList.push(elements.id)
 		}
 		return returnList
@@ -9,3 +9,4 @@ const getListStudentIds = (listOfArray)=>{
 		return []
 	}
 }
+export default getListStudentIds
