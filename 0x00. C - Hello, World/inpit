@@ -1,0 +1,9 @@
+getchar----- reads the next charater from the standard input
+
+putchar ------------take an int and  and return a character to output
+
+printf  ------------ print a foramted sting to the screen
+
+scanf ------ reads formartted inputs from the input and 
+
+
