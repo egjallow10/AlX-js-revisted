@@ -43,10 +43,24 @@ int main()
 	}
 
 	sleep(2);
-	printf("%d",my_random(6));
+	dice = my_random(6);
 
+	if ( guess != dice)
+	{
+		balance -= bet;
+	}
+	else
+	{
+		bet *= 3;
+		balance += bet;
+		printf("You won - Congratulations!\n");
+	}
 
-
+	if ( balance == 0)
+	{
+		printf("GAME OVER\n");
+		return 0;
+	}
 
 
 
