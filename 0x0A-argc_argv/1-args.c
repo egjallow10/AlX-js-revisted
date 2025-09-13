@@ -5,14 +5,14 @@
 int main(int agrc, char *argv[])
 {
 	(void)argv;
-	if(agrc > 0)
+	if(agrc == 1)
 	{
-		printf("%d\n", agrc);
+		printf("%d\n", 0);
 	}
 	else
 	{
-	
-		printf("%d", 0);
+		printf("%d\n", agrc - 1);
+		
 	}
 	return 0;
 }
