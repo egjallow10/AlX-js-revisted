@@ -41,10 +41,17 @@
             }
                 
 
-          }else if(format[i] == '%')
+          }
+          else if(format[i] == '%')
           {
             count += _putchar('%');
-          }else
+          }
+          else if(format[i] == 'd' || format[i] == 'i')
+          {
+            count += print_number(va_arg(args, int));
+
+          }
+          else
           {
             count += _putchar('%');
             count += _putchar(format[i]);
