@@ -51,6 +51,10 @@
             count += print_number(va_arg(args, int));
 
           }
+          else if(format[i] == 'b')
+          {
+             print_binary(va_arg(args, unsigned int));
+          }
           else
           {
             count += _putchar('%');

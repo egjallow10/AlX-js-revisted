@@ -7,5 +7,5 @@
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_number(int n);
-void print_binary(unsigned int n)
+void print_binary(unsigned int n);
 #endif
