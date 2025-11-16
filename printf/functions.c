@@ -23,3 +23,13 @@ int print_number(int n)
     return (count);
     
 }
+
+void print_binary(unsigned int n)
+{
+    if(n > 1)
+    {
+        print_binary( n/ 2);
+        _putchar( (n % 2) + '0');
+
+    }
+}
