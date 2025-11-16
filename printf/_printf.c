@@ -54,6 +54,21 @@
           else if(format[i] == 'b')
           {
              print_binary(va_arg(args, unsigned int));
+          }else if (format[i] == 'u')
+          {
+            print_unsigned_base(va_arg(args, unsigned int), 10, 0);
+          }
+          else if (format[i] == 'o')
+          {
+             print_unsigned_base(va_arg(args, unsigned int), 8, 0);
+          }
+          else if (format[i] == 'x')
+          {
+             print_unsigned_base(va_arg(args, unsigned int), 16, 0);
+          }
+          else if (format[i] == 'X')
+          {
+             print_unsigned_base(va_arg(args, unsigned int), 16, 1);
           }
           else
           {

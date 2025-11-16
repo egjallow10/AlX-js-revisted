@@ -33,3 +33,17 @@ void print_binary(unsigned int n)
 
     }
 }
+
+void print_unsigned_base(unsigned long n, int base, int uppercase)
+{
+    char *digits;
+    if(uppercase)
+        digits = "0123456789ABCDEF";
+    else
+        digits = "012345679abfdef";
+    
+    if(n >= (unsigned long) base)
+        print_unsigned_base(n / base, base, uppercase);
+    
+    _putchar(digits[n % base]);
+}
