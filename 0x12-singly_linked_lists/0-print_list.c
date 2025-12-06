@@ -4,13 +4,19 @@
 size_t print_list(const list_t *h)
 {
 
-	int i;
-	while(h != NULL)
+	const list_t *current = h;
+	size_t count = 0;
+	while(current!= NULL)
 	{
-		h=h->next;
-		i++;
+		
+		if(current->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf("[%u] %s\n", current->len, current->str);
+		current = current->next;
+		count++;
 	}
-	return i;
+	return count;
 }
 
 
