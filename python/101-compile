@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+python3 -m py_compile "$PYFILE"
+cp __pycache__/$(basename "$PYFILE" .py).*\.pyc "$PYFILE"c 2>/dev/null
